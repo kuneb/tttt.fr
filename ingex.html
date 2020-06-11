@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <style> 
+     body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #424478;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+} 
+h1 { 
+    font-family: 'LLPixel';
+    color: yellow;
+    font-size: 100px;
+    margin: .25em;
+    align-self: flex-start;
+} 
+.right {
+    background-image: url('kn_2 (1).png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    height: 100%;
+    width: 25%;
+    animation: onloadRight 1s linear;
+    position: absolute;
+    right: 10%; 
+    animation-name: gg;
+    animation-duration: 2s; 
+}
+.left {
+    background-image: url('kn_1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    height: 100%;
+    width: 25%;
+    animation: onloadLeft 1s linear;
+    position: absolute;
+    left: 10%; 
+    animation-name: example; 
+    animation-duration: 2s;
+} 
+.download {
+    font-family: 'Cartoons 123';
+    font-size: 60px;
+    border: 5px solid white;
+    color: white;
+    padding: .25em;
+    margin-bottom: 1em;
+    cursor: pointer;
+}    
+ @keyframes example {
+  0%   { left:0px;}
+  50%  { left:200px;}
+  100% { left:0px;}
+}
+@keyframes gg {
+  0%   { right:0px;}
+  50%  { right:200px;}
+  100% { right:0px;} 
+}  
+    </style>
+</head>
+<body>
+    <h1>little kingdom</h1> 
+    <div class="knights"></div>
+        <div class="left"></div>
+        <div class="right"></div> 
+            <div class="download">DOWNLOAD</div>
+</body>
+</html>
